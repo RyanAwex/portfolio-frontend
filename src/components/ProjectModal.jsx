@@ -75,8 +75,8 @@ export default function ProjectModal({ project, onClose }) {
 
             {/* Buttons */}
             <div className="mt-6 flex flex-wrap gap-3">
-              <Link
-                to={project.github}
+              <a
+                href={project.github}
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -86,10 +86,10 @@ export default function ProjectModal({ project, onClose }) {
                 "
               >
                 GitHub
-              </Link>
+              </a>
 
-              <Link
-                to={project.demo}
+              <a
+                href={project.demo}
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -98,7 +98,7 @@ export default function ProjectModal({ project, onClose }) {
                 "
               >
                 Website
-              </Link>
+              </a>
             </div>
           </div>
         </div>
