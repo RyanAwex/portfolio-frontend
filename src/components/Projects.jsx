@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectModal from "./ProjectModal";
 import axios from "axios";
-import api from "../api.js";
+import { API } from "../api.js";
 
 export default function Projects() {
   const [openProject, setOpenProject] = useState(null);
@@ -9,7 +9,7 @@ export default function Projects() {
 
   useEffect(() => {
     const getProjects = async () => {
-      const response = await axios.get(`${api}/api/projects`);
+      const response = await axios.get(`${API}/api/projects`);
       setProjects(response.data);
     };
     getProjects();

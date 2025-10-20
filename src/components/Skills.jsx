@@ -2,14 +2,14 @@ import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import api from "../api.js";
+import { API } from "../api.js";
 
 export default function Skills() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
     const getSkills = async () => {
-      const response = await axios.get(`${api}/api/skills`);
+      const response = await axios.get(`${API}/api/skills`);
       setSkills(response.data);
     };
     getSkills();
