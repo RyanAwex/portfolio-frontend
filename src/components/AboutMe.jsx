@@ -29,11 +29,15 @@ export default function AboutMe() {
             style={{ animationDelay: "0.4s" }}
           >
             <p className="text-lg mb-6 leading-relaxed">
-              Hello! I'm Rayane Sefiani, a passionate and results-driven web
-              developer from Morocco. With a solid foundation in front-end
-              technologies like HTML, CSS, and JavaScript and a growing skillset
-              in ReactJs, I specialize in building modern, responsive, and
-              user-focused web applications.
+              Hello! I'm Rayane Sefiani, a passionate and results-driven
+              full-stack developer from Morocco. I have a solid foundation in
+              front-end technologies, including HTML, CSS, JavaScript,
+              TypeScript, and React.js, and I am continuously expanding my
+              skills in Tailwind CSS. On the back-end, I also have a strong
+              foundation in Node.js, Express, PostgreSQL, and MongoDB. I
+              specialize in building modern, responsive, and interactive web
+              applications, as well as developing backend servers and CRUD APIs
+              to support frontend functionality.
             </p>
 
             <p className="text-lg mb-6 leading-relaxed">

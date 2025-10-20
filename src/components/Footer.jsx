@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,15 +9,23 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Rayane Sefiani. All rights reserved.
         </div>
         <div className="mt-3 md:mt-0 flex gap-4">
-          <a href="#" className="text-sm hover:underline">
+          <Link
+            to="/privacy"
+            target="_blank"
+            className="text-sm hover:underline"
+          >
             Privacy
-          </a>
-          <a href="#" className="text-sm hover:underline">
+          </Link>
+          <Link to="/terms" target="_blank" className="text-sm hover:underline">
             Terms
-          </a>
-          <a href="#" className="text-sm hover:underline">
+          </Link>
+          <Link
+            to="https://github.com/RyanAwex"
+            target="_blank"
+            className="text-sm hover:underline"
+          >
             GitHub
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

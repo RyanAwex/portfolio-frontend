@@ -82,16 +82,6 @@ export default function Projects() {
                   >
                     View Details
                   </button>
-
-                  {/* <a
-                  href={p.github}
-                  onClick={(e) => e.stopPropagation()}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-sm "
-                >
-                  Repo
-                </a> */}
                 </div>
               </article>
             ))}

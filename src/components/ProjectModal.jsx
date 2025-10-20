@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function ProjectModal({ project, onClose }) {
   useEffect(() => {
@@ -74,8 +75,8 @@ export default function ProjectModal({ project, onClose }) {
 
             {/* Buttons */}
             <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href={project.github}
+              <Link
+                to={project.github}
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -85,10 +86,10 @@ export default function ProjectModal({ project, onClose }) {
                 "
               >
                 GitHub
-              </a>
+              </Link>
 
-              <a
-                href={project.demo}
+              <Link
+                to={project.demo}
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -96,8 +97,8 @@ export default function ProjectModal({ project, onClose }) {
                   hover:opacity-90
                 "
               >
-                Live Demo
-              </a>
+                Website
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Hero() {
   return (
@@ -11,12 +13,13 @@ export default function Hero() {
           Full-stack developer focusing on clean, accessible and performant web
           applications. I build scalable APIs and modern front-ends.
         </p>
-        <a
-          href="#projects"
+        <HashLink
+          smooth
+          to="#projects"
           className="inline-block mt-8 px-7 py-4 rounded-lg bg-primary text-white  text-lg font-bold shadow hover:bg-accent transition"
         >
           View My Work
-        </a>
+        </HashLink>
       </div>
     </section>
   );

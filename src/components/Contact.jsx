@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -16,8 +17,8 @@ export default function Contact() {
 
         <div className="flex flex-col items-center gap-6">
           {/* Phone Button */}
-          <a
-            href="tel:+212778398140"
+          <Link
+            to="tel:+212631082262"
             className="relative flex items-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 w-full max-w-xs"
           >
             <span className="absolute left-4 flex items-center">
@@ -36,12 +37,12 @@ export default function Contact() {
                 />
               </svg>
             </span>
-            <span className="w-full text-center">+212 778 398 140</span>
-          </a>
+            <span className="w-full text-center">+212 631 082 262</span>
+          </Link>
 
           {/* Email Button */}
-          <a
-            href="mailto:ryanawex@gmail.com"
+          <Link
+            to="mailto:rayane.sefiani.dev@gmail.com"
             className="relative flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 w-full max-w-xs"
           >
             <span className="absolute left-4 flex items-center">
@@ -60,12 +61,14 @@ export default function Contact() {
                 />
               </svg>
             </span>
-            <span className="w-full text-center">ryanawex@gmail.com</span>
-          </a>
+            <span className="w-full text-center">
+              rayane.sefiani.dev@gmail.com
+            </span>
+          </Link>
 
           {/* WhatsApp Button */}
-          <a
-            href="https://wa.me/212778398140"
+          <Link
+            to="https://wa.me/212631082262"
             target="_blank"
             rel="noopener noreferrer"
             className="relative flex items-center bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 w-full max-w-xs"
@@ -81,7 +84,7 @@ export default function Contact() {
               </svg>
             </span>
             <span className="w-full text-center">WhatsApp</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
